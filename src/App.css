@@ -1,4 +1,4 @@
-/* App.css */
+
 body{
 background-color: beige;  
 }
@@ -89,7 +89,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* App.css */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -106,12 +105,15 @@ a:hover {
   animation: gradient 15s ease infinite;
   background: linear-gradient(-45deg, #6fee52, #e7d93c, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  /* Other styles */
 }
-/* App.css */
 .container {
   background-image: url('https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg');
   background-size: cover;
   transition: background-image 0.5s ease-in-out;
-  /* Other styles */
+
+}
+.thank {
+  margin-top: 20px;
+  color: yellow; 
+  font-size: 1.2rem;
 }

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react'; 
 import './App.css';
 
 function App() {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (event) => {
+    setSubmitted(true);
+  };
+
   return (
     <div className="container">
       <h1>Contact me</h1>
@@ -9,11 +14,12 @@ function App() {
         target="_blank"
         action="https://formsubmit.co/nagimbasher@gmail.com"
         method="POST"
+        onSubmit={handleSubmit} 
       >
-        <div className="form-group">
-          <div className="form-row">
-            <div className="col">
-              <input
+             <div className="form-group">
+           <div className="form-row">
+             <div className="col">
+               <input
                 type="text"
                 name="name"
                 className="form-control"
@@ -45,11 +51,16 @@ function App() {
           <h3>Submit Form</h3>
         </button>
       </form>
-      <a className="" href="../public/Nagim Basher CV.pdf" download>
-      <h2>Grab My Resume </h2>
+      {submitted && 
+      <div className='thank'>Thank you for your message. I will get back to you soon!</div>}
+      <a href="../public/Nagim Basher CV.pdf" download>
+        <h2>Grab My Resume</h2>
       </a>
     </div>
   );
 }
 
 export default App;
+
+
+

@@ -35,6 +35,8 @@ function App() {
                 placeholder="Email Address"
                 required
               />
+        <input type="hidden" name="_next" 
+        value=" https://nagimbsher.github.io/mycv/pages/index.html"></input>
             </div>
           </div>
         </div>
@@ -54,12 +56,22 @@ function App() {
       {submitted && 
       <div className='thank'>Thank you for your message. I will get back to you soon!</div>}
      
+
+
+
+     <a href="/CV.pdf" download="CV.pdf">
+  <h3>Grab My Resume</h3>
+</a>
+
+
+
+{/*      
       <a
         href="/CV.pdf"
         download="CV.pdf"
       >
         <h3>Grab My Resume</h3>
-      </a>
+      </a> */}
     </div>
   );
 }

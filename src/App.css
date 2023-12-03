@@ -1,6 +1,7 @@
 
 body{
 background-color: beige;  
+
 }
 
 .container {
@@ -117,4 +118,3 @@ a:hover {
   color: yellow; 
   font-size: 1.2rem;
 }
-

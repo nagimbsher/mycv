@@ -58,20 +58,8 @@ function App() {
      
 
 
+     <a href={require("./CV.pdf")} download="CV.pdf">Download file</a>
 
-     <a href="/CV.pdf" download="CV.pdf">
-  <h3>Grab My Resume</h3>
-</a>
-
-
-
-{/*      
-      <a
-        href="/CV.pdf"
-        download="CV.pdf"
-      >
-        <h3>Grab My Resume</h3>
-      </a> */}
     </div>
   );
 }

@@ -58,7 +58,7 @@ function App() {
      
 
 
-     <a href={require("./CV.pdf")} download="CV.pdf">Download file</a>
+     <a href={require("./CV.pdf")} download="CV.pdf">Download MY CV </a>
 
     </div>
   );
